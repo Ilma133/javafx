@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane  prefHeight="556.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+ fx:controller="com.ptf.rs.zadaca4.controllers.ManageTiketController">
+   <children>
+      <Label fx:id="lblInfo" layoutX="14.0" layoutY="21.0" prefHeight="26.0" prefWidth="82.0" text="Label" />
+      <Label layoutX="41.0" layoutY="60.0" text="Tip usluge" />
+      <ComboBox fx:id="cbTipUsluge" layoutX="212.0" layoutY="56.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="41.0" layoutY="100.0" text="Naslov problema" />
+      <TextField fx:id="txtNaslov" layoutX="213.0" layoutY="96.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="41.0" layoutY="134.0" text="Ime osobe koja prijavljuje" />
+      <TextField fx:id="txtOsoba" layoutX="213.0" layoutY="130.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="41.0" layoutY="172.0" text="Datum prijave" />
+      <DatePicker fx:id="dpDatumPrijave" layoutX="212.0" layoutY="168.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="41.0" layoutY="211.0" text="Nacin prijave" />
+      <ComboBox fx:id="cbNacinPrijave" layoutX="212.0" layoutY="207.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="41.0" layoutY="243.0" text="Prioritet" />
+      <ComboBox fx:id="cbPrioritet" layoutX="212.0" layoutY="239.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="38.0" layoutY="279.0" text="Opis problema" />
+      <TextField fx:id="txtOpis" layoutX="213.0" layoutY="275.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="39.0" layoutY="319.0" text="Agent" />
+      <ComboBox fx:id="cbAgent" layoutX="212.0" layoutY="315.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="38.0" layoutY="360.0" text="Email" />
+      <TextField fx:id="txtEmail" layoutX="210.0" layoutY="356.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="38.0" layoutY="398.0" text="Telefon" />
+      <TextField fx:id="txtTelefon" layoutX="210.0" layoutY="394.0" prefHeight="26.0" prefWidth="206.0" />
+      <Button layoutX="245.0" layoutY="481.0" mnemonicParsing="false" onAction="#prijaviAction" text="Prijavi" />
+      <Button layoutX="351.0" layoutY="481.0" mnemonicParsing="false" onAction="#odustaniAction" text="Odustani" />
+      <Label fx:id="labelTipUslugeError" layoutX="471.0" layoutY="60.0" text="Obavezno polje" />
+      <Label fx:id="labelNaslovError" layoutX="468.0" layoutY="100.0" text="Obavezno polje (max 500 karaktera)" />
+      <Label fx:id="labelOsobaError" layoutX="468.0" layoutY="134.0" text="Obavezno polje (max 100 karaktera)" />
+      <Label fx:id="labelDatumPrijaveError" layoutX="468.0" layoutY="172.0" text="Obavezno polje" />
+      <Label fx:id="labelNacinPrijaveError" layoutX="468.0" layoutY="211.0" text="Obavezno polje"/>
+      <Label fx:id="labelPrioritetError" layoutX="468.0" layoutY="243.0" text="Obavezno polje" />
+      <Label fx:id="labelOpisError" layoutX="468.0" layoutY="279.0" text="Obavezno polje (max 5000 karaktera)" />
+      <Label fx:id="labelAgentError" layoutX="468.0" layoutY="319.0" text="Obavezno polje" />
+      <Label layoutX="42.0" layoutY="443.0" text="Status" />
+      <ComboBox fx:id="cbStatus" layoutX="212.0" layoutY="438.0" prefHeight="26.0" prefWidth="206.0" />
+   </children>
+</AnchorPane>
